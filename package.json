@@ -1,0 +1,32 @@
+{
+  "name": "yandex-YDB-connect-from-serverless-function",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "esbuild": "esbuild src/index.ts --bundle --platform=node --minify --sourcemap=external --outfile=dist/esbuild/index.js",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [],
+  "author": "Gayrat Vlasov",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ydb-sdk": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "esbuild": "^0.14.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mock-aws-s3": "^4.0.2",
+    "nock": "^13.2.1",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
